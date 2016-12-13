@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+	<% include ./partials/header %>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="/myMovies">My Movies</a></li>
+			<li><a href="/">Home</a></li>
+		</ul>
+	</nav>
+	<!-- search bar  -->
+	<section id="search">
+		<h1 id="searchLabel">Search for a Movie:</h1>
+		<input id="find"></input>
+		<button id="submitsearch">FIND</button>
+	</section>
+	<div id="results"></div>
+	<h2 id="movieTitle"></h2>
+	
+	<!-- section of genre results -->
+	<section class="result">
+		<div class="genreResult">
+			<div class="genreHead">
+				<div class="genreTop">
+					<h2 class="genreTitle"></h2>
+					<h2 class="genreRank"></h2>
+				</div>
+				<h3 class="header"></h3>
+			</div>
+			<div class="genreBody">
+				<div class="block 0">
+					<h3></h3>
+				</div>
+				<div class="block 1">
+					<h3></h3>
+				</div>
+				<div class="block 2">
+					<h3></h3>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<% include ./partials/header %>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="/myMovies">My Movies</a></li>
+			<li><a href="/">Home</a></li>
+		</ul>
+	</nav>
+	<div id="recentSearches">
+		<table id="movieTable">
+			<tr>
+				<th>Movie Title</th>
+				<th>Rate it!</th>
+			</tr>
+			<tr class="movieRow">
+				<td><p class="movieTitle"></p></td>
+				<td><input class="rateInput"></input><button class="rateButton">RATE</button></td>
+				<td><button class="deleteButton">DELETE</button></td>
+			</tr>
+		</table>
+	</div>
+</body>

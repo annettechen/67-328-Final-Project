@@ -1,0 +1,154 @@
+body{
+	font-family:'Open Sans', sans-serif;
+}
+nav{
+	width: 100%;
+	float: right;
+	background-color: lightblue;
+	position: absolute;
+	top: 0;
+}
+ul{
+	list-style-type: none;
+	margin: 0px;
+	margin-right:50px;
+}
+
+li{
+	float: right;
+	padding: 10px;
+	text-decoration: none;
+}
+
+li a{
+	text-decoration: none;
+	color: white;
+}
+
+li:hover{
+	background-color: lightgrey;
+}
+#searchLabel{
+	margin-top: 50px;
+}
+#search {
+	text-align: center;
+}
+
+#find{
+	width: 200px;
+	height: 20px;
+	font-size: 20px;
+}
+
+#submitsearch{ 
+	background-color: gray;
+	border-radius: 4px;
+	color: white;
+	width: 50px;
+	height: 25px;
+	font-size: 15px;
+	border: none;
+}
+
+#submitsearch:hover, .rateButton:hover, .deleteButton:hover{
+	background-color:lightblue;
+}
+#movieTitle {
+	text-align: center;
+}
+
+.genreResult {
+	float: left;
+    max-width: 30%;
+    padding: 10px;
+    min-width: 400px;
+    border: 1px solid;
+    height: 300px;
+    margin: 10px;
+}
+
+.genreHead {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.genreTop{
+	margin: auto;
+	border: 1px solid;
+	border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.header{
+	margin-bottom: 5px;
+}
+.genreTitle {
+	float: left;
+	margin: 5px 50px;
+}
+
+.genreRank {
+	float: left;
+	padding: 5px;
+    margin: 0;
+    background-color: lightgray;
+}
+
+.genreBody {
+	display: flex;
+	flex-direction: row;
+}
+
+.movieImg {
+	width: 100px;
+	margin: auto;
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	text-align: center;
+}
+
+.result{
+	width: 100%;
+	margin: auto
+}
+
+#recentSearches {
+	margin-top: 50px;
+}
+
+.rateInput {
+	width: 50px;
+}
+
+.rateButton, .deleteButton {
+	margin-left: 5px;
+	background-color: gray;
+	border-radius: 4px;
+	color: white;
+	width: 40px;
+	border: none;
+}
+
+.deleteButton {
+	margin-left: 20px;
+	width: 60px;
+}
+
+.movieTitle{
+	font-size: 20px;
+	width: 200px;
+}
+
+@media screen and (max-width: 479px)  {
+	body{
+		font-size: 1.5em;
+	}
+}
+
+
