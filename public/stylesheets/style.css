@@ -119,6 +119,8 @@ li:hover{
 }
 
 #recentSearches {
+	width: auto;
+	margin: auto;
 	margin-top: 50px;
 }
 
@@ -145,6 +147,19 @@ li:hover{
 	width: 200px;
 }
 
+#movieTable {
+	width: auto;
+	margin: auto;
+}
+
+#recMovies {
+	text-align: center;
+}
+
+#empty {
+	margin-top: 50px;
+	text-align: center;
+}
 @media screen and (max-width: 479px)  {
 	body{
 		font-size: 1.5em;

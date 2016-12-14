@@ -7,6 +7,10 @@ $(document).ready(function(){
   loadDataFromLocalStorage();
   fillMyMovieTable(movieData)
 
+  if($('.movieRow').length == 1){
+    $('#empty').text('You have not recently searched for any movies!')
+  }
+
   $('#submitsearch').on("click", function() {
     var toDeleteCount = $('.genreResult').length
     console.log(toDeleteCount)
@@ -101,6 +105,10 @@ $(document).ready(function(){
     deleteMovie(movie);
     saveDataToLocalStorage();
     window.location.reload();
+
+    if($('.movieRow').length == 1){
+      $('#empty').text('You have not recently searched for any movies')
+    }
   });
 
   $('.rateButton').on('click', function(){
@@ -176,7 +184,7 @@ function updateMovie(movie, rating){
       type: 'POST',
       data: 'filter={"title": { $eq: "'+ movie +'" }}&update={"$set":{"rating":'+rating+'}}',
       success: function(result) {
-        console.log("Updated Movie collection");
+        console.log("Updated Movie Tables");
       }
     });
     event.preventDefault();
